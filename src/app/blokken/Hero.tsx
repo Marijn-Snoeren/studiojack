@@ -30,10 +30,10 @@ export default function Hero() {
   };
 
   return (
-    /* min-h-screen zorgt voor de volledige hoogte.
+    /* min-h-dvh zorgt voor de volledige hoogte (dvh = dynamic viewport, beter voor mobiel).
        pt-24 (96px) compenseert voor de vaste header zodat de content niet te hoog staat.
     */
-    <section className="min-h-screen w-full flex flex-col items-center justify-center px-8 bg-[#2A3233] pt-24 overflow-hidden">
+    <section className="min-h-dvh w-full flex flex-col items-center justify-center px-8 bg-[#2A3233] pt-24 overflow-hidden">
       <motion.div 
         className="text-center flex-1 flex flex-col justify-center"
         variants={containerVariants}

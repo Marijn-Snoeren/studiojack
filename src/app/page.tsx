@@ -97,7 +97,7 @@ export default function KapsalonJackFinal() {
   ];
 
   return (
-    <div className="bg-[#2A3233] text-white min-h-screen selection:bg-[#F0FFA0] selection:text-[#2A3233] font-raleway-regular antialiased overflow-x-clip">      
+    <div className="bg-[#2A3233] text-white min-h-dvh selection:bg-[#F0FFA0] selection:text-[#2A3233] font-raleway-regular antialiased overflow-x-clip">      
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@400&display=swap');
         .font-montserrat-black { font-family: 'Montserrat', sans-serif; font-weight: 900; }
@@ -127,7 +127,7 @@ export default function KapsalonJackFinal() {
 
       {/* 1. STICKY HERO (Z-index 5: tussen footer en main content) */}
       <div 
-        className={`fixed top-0 left-0 w-full h-screen z-[5] transition-opacity duration-300 ${isHeroHidden ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+        className={`fixed top-0 left-0 w-full h-dvh z-[5] transition-opacity duration-300 ${isHeroHidden ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
       >
         <Hero />
       </div>
@@ -137,7 +137,7 @@ export default function KapsalonJackFinal() {
         ref={mainContentRef}
         className="relative z-[20] bg-[#2A3233]" 
         style={{ 
-          marginTop: '100vh',
+          marginTop: '100dvh',
           marginBottom: `${footerHeight}px`
         }}
       >
